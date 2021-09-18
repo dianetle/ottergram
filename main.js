@@ -40,7 +40,6 @@ function addThumbClickHandler(thumb) {
         setDetailsFromThumb(thumb);
         showDetails();
     });
-}
 
 function getThumbnailsArray() {
     'use strict';
@@ -79,6 +78,7 @@ function initializeEvents() {
     var thumbnails = getThumbnailsArray();
     thumbnails.forEach(addThumbClickHandler);
     addKeyPressHandler();
+}
 }
 
 initializeEvents();
